@@ -27,21 +27,56 @@ The project is structured as a clean Python application, separating core functio
 
  How to Run Locally
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com
-   ```
+ # Prerequisites
 
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+Before running this project, ensure you have Python installed on your system. You can download it from [python.org](https://python.org).
 
-3. **Launch the application:**
-   ```bash
-   python app.py
-   ```
+## Setup and Installation Instructions
 
+Follow these step-by-step instructions to get the application running locally on your machine.
+
+### 1. Clone the Repository
+Open your terminal or command prompt and clone this repository:
+```bash
+git clone https://github.com
+```
+
+### 2. Navigate to the Project Directory
+Change your directory to the folder containing the project files:
+```bash
+cd sustainability-tracker
+```
+
+### 3. Set Up a Virtual Environment (Recommended)
+To keep your dependencies organized, create and activate a virtual environment.
+
+**On Windows:**
+```powershell
+python -m venv venv
+.\venv\Scripts\activate
+```
+*Note: If you receive a script execution error on Windows, run your terminal as an Administrator and execute `Set-ExecutionPolicy RemoteSigned -Scope Process`, then try activating again.*
+
+**On macOS/Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 4. Install Required Packages
+Install all the necessary libraries and dependencies listed in the `requirements.txt` file:
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run the Application
+Launch the Streamlit web application by running:
+```bash
+streamlit run app.py
+```
+
+### 6. View the App
+Once the server starts, it will automatically open in your default web browser. If it doesn't, navigate to the local URL provided in your terminal:
 ---
 
 ## 🌍 Hackathon Details
